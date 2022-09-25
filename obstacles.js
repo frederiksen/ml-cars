@@ -20,6 +20,12 @@ export default class Obstacles {
         this.addSquare(0, this.canvas.height - BORDERWIDTH, this.canvas.width, BORDERWIDTH, COLOR)
         this.addSquare(this.canvas.width - BORDERWIDTH, 0, BORDERWIDTH, this.canvas.height, COLOR)
         this.addSquare(this.canvas.width / 4, this.canvas.height / 3, this.canvas.width / 2, this.canvas.height / 3, COLOR)
+        const COLOR_RED = 'rgb(255, 0, 0)'
+        this.addSquare(this.canvas.width/3 - 10, this.canvas.height - this.canvas.height / 5, 20, this.canvas.height / 5, COLOR_RED)
+        this.addSquare(2*this.canvas.width/3 - 10, this.canvas.height - this.canvas.height / 2 + this.canvas.height / 6 - BORDERWIDTH, 20, this.canvas.height / 5, COLOR_RED)
+        this.addSquare(2*this.canvas.width/3 - 10, 0, 20, this.canvas.height / 5, COLOR_RED)
+        const COLOR_GREEN = 'rgb(0, 128, 0)'
+        this.addSquare(this.canvas.width/4 - this.canvas.width/8, this.canvas.height/2 - 10, BORDERWIDTH, 20, COLOR_GREEN)
     }
 
     addPointblock(x, y) {
